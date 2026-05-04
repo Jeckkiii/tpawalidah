@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Tambahkan warna hijau kamu di bawah sini */
+@theme {
+  --color-tpa-green: #269a57;
+}
+
+html {
+  scroll-behavior: smooth;
+}
