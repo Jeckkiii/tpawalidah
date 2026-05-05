@@ -9,7 +9,7 @@ const Activities = () => {
       title: 'Berkisah',
       date: '19 Maret 2025',
       description: 'Menebar inspirasi melalui kisah teladan dan keceriaan sulap dalam hangatnya kebersamaan buka puasa.',
-      image: '/berkisah1.png',
+      image: '/berkisah1.jpg',
       details: '"Berkisah" adalah ruang silaturahmi yang mengundang santri TPA sekitar untuk meneladani kisah inspiratif melalui tutur cerita dan keceriaan sulap, yang disatukan dalam hangatnya momen buka puasa bersama.',
       participants: 150
     },
@@ -79,7 +79,8 @@ const Activities = () => {
                     <img
                       src={activity.image}
                       alt={activity.title}
-                      className="w-full h-48 md:h-full object-cover"
+                      loading="lazy"
+                      className="w-full h-48 md:h-56 xl:h-64 object-cover"
                     />
                   </div>
                   <div className="md:w-2/3 p-8">
@@ -122,6 +123,7 @@ const Activities = () => {
               <img
                 src={selectedActivity.image}
                 alt={selectedActivity.title}
+                loading="lazy"
                 className="w-full h-64 object-cover rounded-xl mb-6"
               />
               <div className="space-y-4">

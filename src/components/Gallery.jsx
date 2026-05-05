@@ -9,8 +9,8 @@ const Gallery = () => {
     { src: '/g.jpeg', alt: 'Masjid Walidah Dahlan' },
     { src: '/h.jpg', alt: 'Santri Bersama' },
     { src: '/i.jpeg', alt: 'Belajar Doa' },
-    { src: '/j.png', alt: 'Belajar Doa' },
-    { src: '/k.png', alt: 'Belajar Doa' },
+    { src: '/j.jpg', alt: 'Belajar Doa' },
+    { src: '/k.jpg', alt: 'Belajar Doa' },
     { src: '/l.JPG', alt: 'Belajar Doa' },
   ];
 
@@ -31,7 +31,8 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
+                  className="w-full h-56 md:h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 {/* <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <p className="text-white font-bold text-lg text-center px-4">{image.alt}</p>

@@ -29,7 +29,12 @@ const Home = () => {
           </div>
           <div className="flex-1 relative w-full min-h-[320px]">
             <div className="absolute inset-0 bg-green-100 rounded-[40px] rotate-3 translate-x-4 translate-y-4"></div>
-            <img src="/profil.png" alt="Santri Belajar" className="relative w-full h-full max-h-[360px] object-cover rounded-[40px] shadow-2xl border-4 border-white" />
+            <img
+              src="/profil.jpg"
+              alt="Santri Belajar"
+              loading="lazy"
+              className="relative w-full h-full max-h-[360px] object-cover rounded-[40px] shadow-2xl border-4 border-white"
+            />
           </div>
         </div>
       </section>
@@ -59,7 +64,8 @@ const Home = () => {
           <div className="relative rounded-[40px] overflow-hidden shadow-2xl">
             <img
               src="/misi.jpeg"
-              alt="Santri Belajar" 
+              alt="Santri Belajar"
+              loading="lazy"
               className="w-full h-full object-cover min-h-[420px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>

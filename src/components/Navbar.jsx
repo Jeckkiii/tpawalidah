@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-full bg-white p-1 shadow-inner overflow-hidden border border-white">
-            <img src="/logo.png" alt="Logo TPA" className="w-full h-full object-contain" onError={(e) => e.target.src = "https://via.placeholder.com/40?text=W"} />
+            <img src="/logo.png" alt="Logo TPA" loading="lazy" className="w-full h-full object-contain" onError={(e) => e.target.src = "https://via.placeholder.com/40?text=W"} />
           </div>
           <div className="text-white leading-tight">
             <p className="font-black text-lg tracking-tight">MASJID WALIDAH DAHLAN</p>
